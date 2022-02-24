@@ -7,9 +7,9 @@
 * 12/29/2014
 */
 
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Fonts
 - Grid
 - Base Styles
 - Typography
@@ -27,6 +27,7 @@
 - Figure/caption
 */
 
+/*Fonts*/
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -64,114 +65,145 @@
     .container {
         width: 80%;
     }
+
     .column,
     .columns {
         margin-left: 4%;
     }
+
     .column:first-child,
     .columns:first-child {
         margin-left: 0;
     }
+
     .one.column,
     .one.columns {
         width: 4.66666666667%;
     }
+
     .two.columns {
         width: 13.3333333333%;
     }
+
     .three.columns {
         width: 22%;
     }
+
     .four.columns {
         width: 30.6666666667%;
     }
+
     .five.columns {
         width: 39.3333333333%;
     }
+
     .six.columns {
         width: 48%;
     }
+
     .seven.columns {
         width: 56.6666666667%;
     }
+
     .eight.columns {
         width: 65.3333333333%;
     }
+
     .nine.columns {
         width: 74.0%;
     }
+
     .ten.columns {
         width: 82.6666666667%;
     }
+
     .eleven.columns {
         width: 91.3333333333%;
     }
+
     .twelve.columns {
         width: 100%;
         margin-left: 0;
     }
+
     .one-third.column {
         width: 30.6666666667%;
     }
+
     .two-thirds.column {
         width: 65.3333333333%;
     }
+
     .one-half.column {
         width: 48%;
     }
+
     /* Offsets */
     .offset-by-one.column,
     .offset-by-one.columns {
         margin-left: 8.66666666667%;
     }
+
     .offset-by-two.column,
     .offset-by-two.columns {
         margin-left: 17.3333333333%;
     }
+
     .offset-by-three.column,
     .offset-by-three.columns {
         margin-left: 26%;
     }
+
     .offset-by-four.column,
     .offset-by-four.columns {
         margin-left: 34.6666666667%;
     }
+
     .offset-by-five.column,
     .offset-by-five.columns {
         margin-left: 43.3333333333%;
     }
+
     .offset-by-six.column,
     .offset-by-six.columns {
         margin-left: 52%;
     }
+
     .offset-by-seven.column,
     .offset-by-seven.columns {
         margin-left: 60.6666666667%;
     }
+
     .offset-by-eight.column,
     .offset-by-eight.columns {
         margin-left: 69.3333333333%;
     }
+
     .offset-by-nine.column,
     .offset-by-nine.columns {
         margin-left: 78.0%;
     }
+
     .offset-by-ten.column,
     .offset-by-ten.columns {
         margin-left: 86.6666666667%;
     }
+
     .offset-by-eleven.column,
     .offset-by-eleven.columns {
         margin-left: 95.3333333333%;
     }
+
     .offset-by-one-third.column,
     .offset-by-one-third.columns {
         margin-left: 34.6666666667%;
     }
+
     .offset-by-two-thirds.column,
     .offset-by-two-thirds.columns {
         margin-left: 69.3333333333%;
     }
+
     .offset-by-one-half.column,
     .offset-by-one-half.columns {
         margin-left: 52%;
@@ -189,6 +221,8 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 html {
     font-size: 62.5%;
+    background-color: #2E5B43;
+
 }
 
 body {
@@ -196,8 +230,8 @@ body {
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #222;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", "Space Grotesk", Helvetica, Arial, sans-serif;
+    color: #F0C24A;
 }
 
 
@@ -259,18 +293,23 @@ h6 {
     h1 {
         font-size: 5.0rem;
     }
+
     h2 {
         font-size: 4.2rem;
     }
+
     h3 {
         font-size: 3.6rem;
     }
+
     h4 {
         font-size: 3.0rem;
     }
+
     h5 {
         font-size: 2.4rem;
     }
+
     h6 {
         font-size: 1.5rem;
     }
@@ -278,12 +317,14 @@ h6 {
 
 p {
     margin-top: 0;
-    font-family: 
 }
 
 
 /*font family */
 
+p {
+    font-family: 'Space Grotesk', sans-serif;
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -655,32 +696,40 @@ there.
     represents a path the element follows across the screen. */
 
 @keyframes fly {
+
     98.001%,
     0% {
         display: block;
         transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
     }
+
     15% {
         transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
     }
+
     15.001%,
     18% {
         transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
     }
+
     40% {
         transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
     }
+
     40.001%,
     43% {
         transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
     }
+
     65% {
         transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
     }
+
     65.001%,
     68% {
         transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
     }
+
     95% {
         transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
     }
